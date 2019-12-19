@@ -71,16 +71,60 @@
                     Auto sign is required
                 </mat-error>
             </div> -->
-            <mat-form-field>
+            <!-- <mat-form-field>
                 <mat-select placeholder="Signed Authority" (selectionChange)="SignedAuthoritySelected($event.value)"
                      formControlName="Authority" required>
                     <mat-option *ngFor="let ema of AllAuthority" [value]="ema.UserName">{{ema.UserName}}
-                        <!-- - {{ema.Priority}} -->
                     </mat-option>
                 </mat-select>
                 <mat-error *ngIf="ConfigurationFormGroup.get('Authority').touched && ConfigurationFormGroup.get('Authority').hasError('required')">
                     Signed Authority required
                 </mat-error>
+            </mat-form-field> -->
+            <mat-form-field>
+                <mat-select placeholder="Authority 1" (selectionChange)="SignedAuthority1Selected()" formControlName="Authority1" required>
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="ConfigurationFormGroup.get('Authority1').touched && ConfigurationFormGroup.get('Authority1').hasError('required')">
+                    Signed Authority required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Authority 2" (selectionChange)="SignedAuthoritySelected()" formControlName="Authority2">
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Authority 3" (selectionChange)="SignedAuthoritySelected()" formControlName="Authority3">
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Authority 4" (selectionChange)="SignedAuthoritySelected()" formControlName="Authority4">
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Authority 5" (selectionChange)="SignedAuthoritySelected()" formControlName="Authority5">
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Authority 6" formControlName="Authority6">
+                    <mat-option>Select authorized user</mat-option>
+                    <mat-option *ngFor="let ema of AllUserEmails" [value]="ema.UserName" [disabled]="ema.IsSelected">{{ema.UserName}}
+                    </mat-option>
+                </mat-select>
             </mat-form-field>
             <!-- <mat-form-field>
                 <mat-select placeholder="Certificate Name" formControlName="CertificateName"
