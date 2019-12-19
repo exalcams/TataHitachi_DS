@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, throwError } from 'rxjs';
 import { AuthService } from './auth.service';
-import { GetDocument, DSSConfiguration, DSSInvoice, DSSStatusCount, CertificateClass, DSSErrorInvoice, UserByPlant, ErrorInvoice } from 'app/models/dss';
+import { GetDocument, DSSConfiguration, DSSInvoice, DSSStatusCount, CertificateClass, DSSErrorInvoice, UserByPlant, ErrorInvoice, AuthorityClass } from 'app/models/dss';
 import { catchError } from 'rxjs/operators';
 
 @Injectable()
@@ -122,8 +122,8 @@ export class DashboardService {
       .pipe(catchError(this.errorHandler));
   }
 
-  GetAllUserEmails(): Observable<string[] | string> {
-    return this._httpClient.get<string[]>(`${this.baseUrl}api/ESigner/GetAllUserEmails`)
+  GetAllUserEmails(): Observable<AuthorityClass[] | string> {
+    return this._httpClient.get<AuthorityClass[]>(`${this.baseUrl}api/ESigner/GetAllUserEmails`)
       .pipe(catchError(this.errorHandler));
   }
   // GetAllPlants(): Observable<string[] | string> {
