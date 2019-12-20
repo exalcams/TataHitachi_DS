@@ -74,9 +74,9 @@ export class DashboardComponent implements OnInit {
   SignDocumentsColumns: string[] = ['INV_NAME', 'CODE', 'DOCTYPE', 'AREA', 'SIGNED_AUTHORITY', 'SIGNED_ON', 'View', 'Download'];
   // tslint:disable-next-line:max-line-length
   UnSignDocumentsColumns: string[] = ['INV_NAME', 'CODE', 'DOCTYPE', 'AREA', 'CREATED_ON', 'View', 'Download'];
-  ConfigurationsColumns: string[] = ['CONFIG1', 'CONFIG2', 'CONFIG3', 'DISPLAYTITLE1', 'DISPLAYTITLE2', 'CREATED_ON'];
+  ConfigurationsColumns: string[] = ['CONFIG1', 'CONFIG2', 'CONFIG3', 'AUTHORITY', 'AUTHORITY1', 'AUTHORITY2', 'AUTHORITY3', 'AUTHORITY4', 'AUTHORITY5', 'DISPLAYTITLE1', 'DISPLAYTITLE2', 'CREATED_ON'];
   // tslint:disable-next-line:max-line-length
-  ExpiredCertificatesColumns: string[] = ['CONFIG1', 'CONFIG2', 'CONFIG3', 'DISPLAYTITLE1', 'DISPLAYTITLE2', 'CERT_EX_DT'];
+  ExpiredCertificatesColumns: string[] = ['CONFIG1', 'CONFIG2', 'CONFIG3', 'AUTHORITY', 'AUTHORITY1', 'AUTHORITY2', 'AUTHORITY3', 'AUTHORITY4', 'AUTHORITY5', 'DISPLAYTITLE1', 'DISPLAYTITLE2', 'CERT_EX_DT'];
   ErrorDocumentsColumns: string[] = ['INV_NAME', 'CODE', 'DOCTYPE', 'AREA', 'CREATED_ON', 'Comment', 'View', 'Download'];
 
   @ViewChild(MatPaginator) SignDocumentsPaginator: MatPaginator;

@@ -267,7 +267,7 @@
 
               <ng-container matColumnDef="SIGNED_ON">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> SIGNED_ON </th>
-                <td mat-cell *matCellDef="let row"> {{row.SIGNED_ON | date : 'dd-MM-yyyy hh:mm:ss a'}}</td>
+                <td mat-cell *matCellDef="let row"> {{row.SIGNED_ON | date : 'dd-MM-yyyy'}}</td>
               </ng-container>
 
 
@@ -388,7 +388,7 @@
 
                     <ng-container matColumnDef="CREATED_ON">
                       <th mat-header-cell *matHeaderCellDef mat-sort-header> CREATED_ON </th>
-                      <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy hh:mm:ss a'}} </td>
+                      <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy'}} </td>
                     </ng-container>
 
                     <ng-container matColumnDef="View">
@@ -452,6 +452,31 @@
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Config3</th>
                 <td mat-cell *matCellDef="let row"> {{row.CONFIG3}} </td>
               </ng-container>
+              <ng-container matColumnDef="AUTHORITY">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority1</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="AUTHORITY1">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority2</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY1}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY2">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority3</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY2}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY3">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority4</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY3}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY4">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority5</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY4}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY5">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority6</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY5}} </td>
+              </ng-container>
 
               <ng-container matColumnDef="DISPLAYTITLE1">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Title1</th>
@@ -466,7 +491,7 @@
 
               <ng-container matColumnDef="CREATED_ON">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>CreatedOn</th>
-                <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy hh:mm:ss a'}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy'}} </td>
               </ng-container>
 
 
@@ -514,6 +539,31 @@
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Config3</th>
                 <td mat-cell *matCellDef="let row"> {{row.CONFIG3}} </td>
               </ng-container>
+              <ng-container matColumnDef="AUTHORITY">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority1</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="AUTHORITY1">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority2</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY1}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY2">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority3</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY2}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY3">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority4</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY3}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY4">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority5</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY4}} </td>
+              </ng-container>
+              <ng-container matColumnDef="AUTHORITY5">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Authority6</th>
+                <td mat-cell *matCellDef="let row"> {{row.AUTHORITY5}} </td>
+              </ng-container>
 
 
               <ng-container matColumnDef="DISPLAYTITLE1">
@@ -529,7 +579,7 @@
 
               <ng-container matColumnDef="CERT_EX_DT">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Expired On</th>
-                <td mat-cell *matCellDef="let row">{{row.CERT_EX_DT | date : 'dd-MM-yyyy hh:mm:ss a'}} </td>
+                <td mat-cell *matCellDef="let row">{{row.CERT_EX_DT | date : 'dd-MM-yyyy'}} </td>
               </ng-container>
 
 
@@ -578,7 +628,7 @@
 
               <ng-container matColumnDef="CREATED_ON">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Created On </th>
-                <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy hh:mm:ss a'}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.CREATED_ON | date : 'dd-MM-yyyy'}} </td>
               </ng-container>
 
               <ng-container matColumnDef="Comment">
