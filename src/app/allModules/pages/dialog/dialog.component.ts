@@ -72,7 +72,7 @@ export class DialogComponent implements OnInit {
     ngOnInit(): void {
         // this.GetAllCertificateFromStore();
         this.GetAllAuthoritys();
-        console.log(this.DSSConfigurationData);
+       // console.log(this.DSSConfigurationData);
         if (this.DSSConfigurationData) {
             this.ConfigurationFormGroup.setValue({
                 // AutoSign: this.DSSConfigurationData.AUTOSIGN ? '1' : '0',
@@ -98,6 +98,7 @@ export class DialogComponent implements OnInit {
             this.ResetControl();
             //  this.ConfigurationFormGroup.get('AutoSign').patchValue('1');
         }
+        console.log(this.ConfigurationFormGroup);
     }
 
     GetAllAuthoritys(): void {
