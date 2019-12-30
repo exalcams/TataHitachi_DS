@@ -64,7 +64,8 @@
         *ngIf="userMainFormGroup.get('contactNumber').touched && userMainFormGroup.get('contactNumber').hasError('required')">
         Mobile Number is required
       </mat-error> !userMainFormGroup.get('contactNumber').hasError('required') && -->
-      <mat-error *ngIf="userMainFormGroup.get('contactNumber').touched && userMainFormGroup.get('contactNumber').hasError('pattern')">
+      <mat-error
+        *ngIf="userMainFormGroup.get('contactNumber').touched && userMainFormGroup.get('contactNumber').hasError('pattern')">
         Please enter a valid Mobile Number
       </mat-error>
     </mat-form-field>
@@ -78,6 +79,24 @@
         Name required</mat-error>
     </mat-form-field>
 
+  </div>
+  
+  <div fxLayout="row" fxLayoutAlign="start">
+    <mat-form-field class="p-12" fxFlex="50">
+      <input matInput placeholder="DisplayTitle1" formControlName="displayTitle1">
+      <mat-error
+        *ngIf="userMainFormGroup.get('displayTitle1').touched &&  userMainFormGroup.get('displayTitle1').hasError('required')">
+        DisplayTitle1 is
+        required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="p-12" fxFlex="50">
+      <input matInput placeholder="DisplayTitle2" formControlName="displayTitle2">
+      <mat-error
+        *ngIf="userMainFormGroup.get('displayTitle2').touched &&  userMainFormGroup.get('displayTitle2').hasError('required')">
+        DisplayTitle2 is
+        required</mat-error>
+    </mat-form-field>
   </div>
 
   <div fxLayout="row" fxLayoutAlign="start" fxFlex="1 0 auto">

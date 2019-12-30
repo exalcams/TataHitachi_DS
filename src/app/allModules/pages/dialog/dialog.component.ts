@@ -57,8 +57,8 @@ export class DialogComponent implements OnInit {
             Authority6: [''],
             // CertificateName: ['', Validators.required],
             ExpiryDate: ['', Validators.required],
-            DisplayTitle1: ['', Validators.required],
-            DisplayTitle2: ['']
+            // DisplayTitle1: ['', Validators.required],
+            // DisplayTitle2: ['']
         });
         // this.CurrentDSSConfiguration = new DSSConfiguration();
         this.showExtraToFields = false;
@@ -90,8 +90,8 @@ export class DialogComponent implements OnInit {
                 Authority6: this.DSSConfigurationData.AUTHORITY5,
                 // CertificateName: this.DSSConfigurationData.CERT_NAME,
                 ExpiryDate: this.DSSConfigurationData.CERT_EX_DT,
-                DisplayTitle1: this.DSSConfigurationData.DISPLAYTITLE1,
-                DisplayTitle2: this.DSSConfigurationData.DISPLAYTITLE2
+                // DisplayTitle1: this.DSSConfigurationData.DISPLAYTITLE1,
+                // DisplayTitle2: this.DSSConfigurationData.DISPLAYTITLE2
             });
         } else {
             this.DSSConfigurationData = new DSSConfiguration();
@@ -202,8 +202,8 @@ export class DialogComponent implements OnInit {
             this.DSSConfigurationData.AUTHORITY3 = this.ConfigurationFormGroup.get('Authority4').value;
             this.DSSConfigurationData.AUTHORITY4 = this.ConfigurationFormGroup.get('Authority5').value;
             this.DSSConfigurationData.AUTHORITY5 = this.ConfigurationFormGroup.get('Authority6').value;
-            this.DSSConfigurationData.DISPLAYTITLE1 = this.ConfigurationFormGroup.get('DisplayTitle1').value;
-            this.DSSConfigurationData.DISPLAYTITLE2 = this.ConfigurationFormGroup.get('DisplayTitle2').value;
+            // this.DSSConfigurationData.DISPLAYTITLE1 = this.ConfigurationFormGroup.get('DisplayTitle1').value;
+            // this.DSSConfigurationData.DISPLAYTITLE2 = this.ConfigurationFormGroup.get('DisplayTitle2').value;
             this.matDialogRef.close(this.DSSConfigurationData);
         } else {
             Object.keys(this.ConfigurationFormGroup.controls).forEach(key => {
